@@ -1,0 +1,56 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    @apply text-grey;
+  }
+
+  .brand {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 20px;
+  }
+  h1 {
+    @apply text-3xl md:text-4xl lg:text-5xl font-semibold;
+  }
+  h2 {
+    @apply text-2xl md:text-3xl lg:text-4xl font-semibold;
+  }
+  h3 {
+    @apply text-2xl md:text-2xl lg:text-2xl font-bold;
+  }
+  h4 {
+    @apply text-lg md:text-lg lg:text-lg font-semibold;
+  }
+  .b1 {
+    @apply text-md md:text-lg font-normal;
+  }
+
+  .b2 {
+    @apply text-sm md:text-base font-normal;
+  }
+}
+
+.btn {
+  @apply border border-solid rounded-md text-base font-medium px-5 sm:px-8 py-3 !important; /* Adjusted to use Tailwind utilities */
+}
+
+.btn-primary {
+  @apply btn bg-primary text-white; /* Adjusted hover state */
+}
+
+.btn-secondary {
+  @apply btn bg-white text-primary border-primary; /* Adjusted hover state */
+}
+.bg-img {
+  @apply bg-cover rounded-lg !important;
+}
+table {
+    @apply table-auto w-full text-center whitespace-nowrap
+}
+table td,
+.table-cell-padding th {
+  @apply p-2 font-semibold; /* 8px padding */
+}
