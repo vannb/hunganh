@@ -803,6 +803,10 @@ h4 {
   height: 100%;
 }
 
+.w-16 {
+  width: 4rem;
+}
+
 .w-6 {
   width: 1.5rem;
 }
@@ -811,20 +815,8 @@ h4 {
   width: 100%;
 }
 
-.w-16 {
-  width: 4rem;
-}
-
-.w-14 {
-  width: 3.5rem;
-}
-
 .min-w-16 {
   min-width: 4rem;
-}
-
-.min-w-14 {
-  min-width: 3.5rem;
 }
 
 .max-w-2xl {
@@ -920,15 +912,6 @@ h4 {
   border-bottom-width: 1px;
 }
 
-.border-b-2 {
-  border-bottom-width: 2px;
-}
-
-.border-grey {
-  --tw-border-opacity: 1;
-  border-color: rgb(77 77 77 / var(--tw-border-opacity));
-}
-
 .border-blue {
   --tw-border-opacity: 1;
   border-color: rgb(171 190 209 / var(--tw-border-opacity));
@@ -944,20 +927,12 @@ h4 {
   background-color: rgb(245 247 250 / var(--tw-bg-opacity));
 }
 
-.p-3 {
-  padding: 0.75rem;
-}
-
-.p-1 {
-  padding: 0.25rem;
-}
-
 .p-2 {
   padding: 0.5rem;
 }
 
-.p-4 {
-  padding: 1rem;
+.p-3 {
+  padding: 0.75rem;
 }
 
 .py-12 {
@@ -1112,7 +1087,23 @@ table td,
   /* 8px padding */
 }
 
+.btn-group {
+  display: flex;
+}
+
+.btn-child {
+  width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
 @media (min-width: 640px) {
+  .btn-child {
+    width: -moz-max-content;
+    width: max-content;
+  }
+
   .sm\:col-span-2 {
     grid-column: span 2 / span 2;
   }
@@ -1120,10 +1111,6 @@ table td,
   .sm\:w-max {
     width: -moz-max-content;
     width: max-content;
-  }
-
-  .sm\:justify-start {
-    justify-content: flex-start;
   }
 }
 

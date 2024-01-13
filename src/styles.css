@@ -54,3 +54,9 @@ table td,
 .table-cell-padding th {
   @apply p-2 font-semibold; /* 8px padding */
 }
+.btn-group {
+    @apply flex
+}
+.btn-child {
+    @apply w-full sm:w-max truncate
+}
