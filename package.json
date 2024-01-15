@@ -1,8 +1,12 @@
 {
   "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-clean-css": "^4.3.0",
+    "gulp-htmlmin": "^5.0.1",
     "tailwindcss": "^3.4.1"
   },
   "scripts": {
-    "build-css": "tailwindcss build src/styles.css -o css/styles.css"
+    "watch-css": "npx tailwindcss -i ./src/styles.css -o ./css/styles.css --watch",
+    "build-prod": "npx tailwindcss -i ./src/styles.css -o ./css/styles.css && npx gulp"
   }
 }
