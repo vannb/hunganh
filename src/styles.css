@@ -34,7 +34,7 @@
 }
 
 .btn {
-  @apply border border-solid rounded-md text-base font-medium px-5 sm:px-8 py-3 !important; /* Adjusted to use Tailwind utilities */
+  @apply border border-solid rounded-md text-base font-medium px-3 sm:px-10 py-3 !important; /* Adjusted to use Tailwind utilities */
 }
 
 .btn-primary {
